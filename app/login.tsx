@@ -1,7 +1,8 @@
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { router } from "expo-router";
-import { Button, Text, View } from "react-native";
+import { View } from "react-native";
 import { useSession } from "./ctx";
+import { Button, Text } from "react-native-paper";
 
 export default function LoginScreen(){
     const { signIn } = useSession();
@@ -13,7 +14,8 @@ export default function LoginScreen(){
                 alignItems: 'center'
             }}>
                 <Text>Tela Login</Text>
-                <Button title="Login" onPress={() => {signIn()}} />
+                <Button mode="contained" onPress={() => {signIn()}}>Login</Button>
+                
             </View>
         </>
     );

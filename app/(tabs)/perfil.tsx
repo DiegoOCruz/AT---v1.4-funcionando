@@ -1,6 +1,7 @@
 import { Redirect, router } from "expo-router";
-import { Button, Text, View } from "react-native";
+import { View } from "react-native";
 import { useSession } from "../ctx";
+import { Text } from "react-native-paper";
 
 export default function PerfilScreen(){
     
